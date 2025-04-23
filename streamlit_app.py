@@ -19,9 +19,13 @@ st.caption("Updated daily from ERCOT settlement data. Select nodes to compare pr
 
 # Timestamp from CSV file modification
 csv_path = "outputs/rolling_7_day_avg.csv"
-last_modified = os.path.getmtime(csv_path)
-last_updated = datetime.fromtimestamp(last_modified).strftime("%Y-%m-%d %H:%M:%S")
-st.caption(f"📅 Data last updated: {last_updated}")
+
+try:
+    last_modified = os.path.getmtime(csv_path)
+    last_updated = datetime.fromtimestamp(last_modified).strftime("%Y-%m-%d %H:%M:%S")
+    st.caption(f"📅 Data last updated: {last_updated}")
+except FileNotFoundError:
+    st.caption("⚠️ Data file not found - app is running without it.")
 
 # Load and Clean Data
 df = pd.read_csv(csv_path)
