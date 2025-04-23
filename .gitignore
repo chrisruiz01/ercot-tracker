@@ -1,0 +1,17 @@
+# Ignore environments
+venv/
+.env
+
+# Ignore compiled Python
+__pycache__/
+*.py[cod]
+
+# Ignore logs and junk
+*.log
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore generated outputs
+outputs/*.png
+outputs/*.csv
