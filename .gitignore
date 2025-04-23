@@ -15,3 +15,6 @@ __pycache__/
 # Ignore generated outputs
 outputs/*.png
 outputs/*.csv
+
+chromedriver.exe
+notebooks/

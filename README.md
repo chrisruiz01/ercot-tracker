@@ -21,7 +21,7 @@ A Streamlit-based dashboard that visualizes **7-day rolling averages** and **dai
 
 ## 📷 Screenshot
 
-![ERCOT Tracker Screenshot](outputs/rolling_avg_chart.png)
+![ERCOT Tracker Screenshot](docs/ercot_tracker_screenshot.png)
 
 ---
 
